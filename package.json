@@ -5,8 +5,7 @@
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack src/scripts.js public/bundle.js",
-    "build:c": "webpack",
+    "build": "webpack",
     "build:prod": "webpack -p"
   },
   "repository": {

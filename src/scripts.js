@@ -1,4 +1,5 @@
 import './style.sass'
+import $ from 'jquery'
 
 const validateArr = arr => {
   if (arr.length < 2)

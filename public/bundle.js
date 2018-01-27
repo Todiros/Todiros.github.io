@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/public";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
@@ -65,80 +65,87 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-const validateArr = arr => {
-  if (arr.length < 2)
-    arr.push(arr[0])
-    
-  return arr
-}
+"use strict";
 
-const getInput = () => {
-  let input = $('#input').val()
-  let inputArr = input.split(" ").slice(0, 2).map(Number)
-  
-  return validateArr(inputArr)
-}
 
-const printLCM = LCM => {
-  $("#result").text(LCM)
-}
+__webpack_require__(1);
 
-const findMinFromArr = arr => {
+var validateArr = function validateArr(arr) {
+  if (arr.length < 2) arr.push(arr[0]);
+
+  return arr;
+};
+
+var getInput = function getInput() {
+  var input = $('#input').val();
+  var inputArr = input.split(" ").slice(0, 2).map(Number);
+
+  return validateArr(inputArr);
+};
+
+var printLCM = function printLCM(LCM) {
+  $("#result").text(LCM);
+};
+
+var findMinFromArr = function findMinFromArr(arr) {
   if (arr[0] > arr[1])
     // swapping the two elements in the array
-    arr[0] = arr.splice(1, 1, arr[0])[0]
-  
-  return arr
-}
+    arr[0] = arr.splice(1, 1, arr[0])[0];
 
-const findLCM = (LCM, next) => {
-  let isLCM = false;
-  let currentLCM = 0;
-    
+  return arr;
+};
+
+var findLCM = function findLCM(LCM, next) {
+  var isLCM = false;
+  var currentLCM = 0;
+
   while (!isLCM) {
-    currentLCM += LCM
+    currentLCM += LCM;
 
     if (currentLCM % next === 0) {
-      isLCM = true
-      LCM = currentLCM
+      isLCM = true;
+      LCM = currentLCM;
     }
   }
-  
-  return LCM
-}
 
-const smallestCommons = arr => {
+  return LCM;
+};
+
+var smallestCommons = function smallestCommons(arr) {
   arr = findMinFromArr(arr);
-  let min = arr[0]
-  let max = arr[1]
-  
-  let LCM = min;
-  
-  for (let i = min; i < max; i++) {
-    let current = i
-    let next = current + 1
-    
-    LCM = findLCM(LCM, next)
-  }
-  
-  printLCM(LCM)
-  // return arr
-}
+  var min = arr[0];
+  var max = arr[1];
 
-$("#label").click(() => {
-  let display = $('#input').css('display')
-  
-  if (display != 'none') {
-    $("#input").hide("fast")
-    $('#numbers').text(findMinFromArr(getInput()).join(' - '))
-    smallestCommons(getInput())
-    
+  var LCM = min;
+
+  for (var i = min; i < max; i++) {
+    var current = i;
+    var next = current + 1;
+
+    LCM = findLCM(LCM, next);
   }
-  else
-    $("#input").show("fast")
-})
+
+  printLCM(LCM);
+  // return arr
+};
+
+$("#label").click(function () {
+  var display = $('#input').css('display');
+
+  if (display != 'none') {
+    $("#input").hide("fast");
+    $('#numbers').text(findMinFromArr(getInput()).join(' - '));
+    smallestCommons(getInput());
+  } else $("#input").show("fast");
+});
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

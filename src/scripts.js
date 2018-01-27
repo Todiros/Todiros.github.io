@@ -1,3 +1,5 @@
+import './style.sass'
+
 const validateArr = arr => {
   if (arr.length < 2)
     arr.push(arr[0])

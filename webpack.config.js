@@ -18,14 +18,18 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.js$/, 
+				enforce: "pre", 
+				exclude: /node_modules/,
+				use: [{ loader: "jshint-loader"}]
+			},
+			{
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: [
 					{
-						loader: 'babel-loader',
-						query: {
-							presets: ['env']
-						}
+						loader: 'babel-loader', 
+						query: { presets: ['env'] }
 					}
 				]
 			},

@@ -8,4 +8,5 @@
 - [ ] ~~setup github hosting to look for /public as home~~
   - [ ] create a 'subdomain' for the entire project
 - [ ] add the source code in separate repo
+- [ ] install minifying plugin
 - [x] update this TODO

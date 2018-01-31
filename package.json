@@ -5,8 +5,9 @@
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "build:prod": "webpack -p"
+    "build:d": "webpack",
+    "start": "webpack -p",
+    "server": "webpack-dev-server --host 0.0.0.0 --port 9000 -p"
   },
   "repository": {
     "type": "git",

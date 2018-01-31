@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Todiros/Todiros.github.io.git || git+https://github.com/Todiros/SCM.git"
+    "url": "git+https://github.com/Todiros/SCM.git"
   },
   "author": "Xzahn",
   "license": "MIT",

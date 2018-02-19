@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #D5D5D5;
+    color: #0E0B16;
+    font-size: 13px;
+}
+
+#container {
+    margin: 0 auto;
+    width: 620px;
+    padding: 15px;
+    padding-top: 5px;
+    background-color: #EFEFEF;
+    border: 1px solid rgba(150, 135, 145, 0.500);
+}
+
+#info-wrapper {
+    padding: 0 10px 0 10px;
+    margin-top: 5px;
+    border: 1px solid #D5D5D5;
+}
+
+#animal-name {
+    margin-top: 0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#facts-list {
+    list-style: none;
+    padding: 0;
+}
+#facts-list > li {
+    padding-bottom: 3px;
+}
+#fact {
+    font-style: italic;
+    margin: 0 0 5px 0;
+    font-family: 'Shadows Into Light', cursive;
+    color: #9099A2;
+}
+
+#header, #fact {
+    text-align: center;
+}
+
+.trait, .desc-title {
+    font: 700 16px 'Shadows Into Light', cursive;
+}
+
+.desc-title {
+    margin: 0;
+    text-align: center;
+}
+.desc-text {
+    margin: 0 0 10px 0;
+    height: auto;
+    max-height: 1px;
+    transition: max-height 500ms ease-out;
+    overflow: hidden;
+}
+.desc-wrap:hover .desc-text {
+    max-height: 200px;
+}

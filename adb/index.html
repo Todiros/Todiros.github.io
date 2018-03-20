@@ -4,39 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/imports/background.min.css">
+    <link rel="stylesheet" href="styles/background.min.css">
     <link rel="stylesheet" href="styles/main.min.css">
     <title>ADB Studios</title>
 </head>
 <body>
     <nav id="top-menu">
         <div id="logo-wrap">
-            <img src="res/img/ADB.svg" alt="adb-logo" id="logo-small" height="60px">
-            <img src="res/img/ADBStudios.svg" alt="adb-studio-logo" id="logo-full" height="60px">
-            <img src="res/img/ADBStudios.svg" alt="adb-studio-logo" id="logo-full-small" height="50px">
+            <img src="res/img/logo/ADB.svg" alt="adb-logo" id="logo-small" height="60px">
+            <img src="res/img/logo/ADBStudios.svg" alt="adb-studio-logo" id="logo-full" height="60px">
+            <img src="res/img/logo/ADBStudios.svg" alt="adb-studio-logo" id="logo-full-small" height="50px">
         </div>
         
         <ul id="navigation">
-            <li class="nav-el first"><a href="#home" id="home"><img src="res/img/home.svg" alt="home-page-icon" width="30px"></a></li>
-            <li class="nav-el"><a href="#about" id="about"><img src="res/img/about.svg" alt="about-page-icon" width="30px"></a></li>
-            <li class="nav-el"><a href="#portfolio" id="portfolio"><img src="res/img/portfolio.svg" alt="portfolio-page-icon" width="30px"></a></li>
-            <li class="nav-el"><a href="#contact" id="contact"><img src="res/img/contact.svg" alt="contact-page-icon" width="30px"></a></li>
+            <li class="nav-el first"><a href="#home" id="home"><img src="res/img/icons/home.svg" alt="home-page-icon" width="30px"></a></li>
+            <li class="nav-el"><a href="#about" id="about"><img src="res/img/icons/about.svg" alt="about-page-icon" width="30px"></a></li>
+            <li class="nav-el"><a href="#portfolio" id="portfolio"><img src="res/img/icons/portfolio.svg" alt="portfolio-page-icon" width="30px"></a></li>
+            <li class="nav-el"><a href="#contact" id="contact"><img src="res/img/icons/contact.svg" alt="contact-page-icon" width="30px"></a></li>
         </ul>
 
         <div id="button-wrap">
-            <img class="down" src="res/img/down.svg" alt="mobile-menu-button" id="menu-button" width="50px">
+            <img class="down" src="res/img/icons/down.svg" alt="mobile-menu-button" id="menu-button" width="50px">
         </div>
 
         <div id="social-wrap">
             <ul id="social">
-                <li class="linkedin"><a href="https://www.linkedin.com/" target="_blank" class="social-linkedin"><img src="res/img/linkedin.svg" alt="social-linked-icon" width="14px"></a></li>
-                <li class="github"><a href="https://github.com/" target="_blank" class="social-github"><img src="res/img/github.svg" alt="social-github-icon" width="13px"></a></li>
-                <li class="codepen"><a href="https://codepen.io/" target="_blank" class="social-codepen"><img src="res/img/codepen.svg" alt="social-codepen-icon" width="14px"></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/" target="_blank" class="social-linkedin"><img src="res/img/icons/linkedin.svg" alt="social-linked-icon" width="14px"></a></li>
+                <li class="github"><a href="https://github.com/" target="_blank" class="social-github"><img src="res/img/icons/github.svg" alt="social-github-icon" width="13px"></a></li>
+                <li class="codepen"><a href="https://codepen.io/" target="_blank" class="social-codepen"><img src="res/img/icons/codepen.svg" alt="social-codepen-icon" width="14px"></a></li>
             </ul>
         </div>
     </nav>
 
-    <img src="res/img/ADBStudios.svg" alt="adb-studio-logo-desktop" id="logo-full-desktop" height="120px"> 
+    <nav id="dropdown-menu">
+        <ul id="dropdown-nav">
+            <li class="nav-el first"><a href="#home" id="home"><img src="res/img/icons/home.svg" alt="home-page-icon" width="30px"></a></li>
+            <li class="nav-el"><a href="#about" id="about"><img src="res/img/icons/about.svg" alt="about-page-icon" width="30px"></a></li>
+            <li class="nav-el"><a href="#portfolio" id="portfolio"><img src="res/img/icons/portfolio.svg" alt="portfolio-page-icon" width="30px"></a></li>
+            <li class="nav-el"><a href="#contact" id="contact"><img src="res/img/icons/contact.svg" alt="contact-page-icon" width="30px"></a></li>
+        </ul>
+    </nav>
+
+    <img src="res/img/logo/ADBStudios.svg" alt="adb-studio-logo-desktop" id="logo-full-desktop" height="120px"> 
 
     <div id="content-wrap"> 
         <!-- AJAX LOAD -->
@@ -51,6 +60,7 @@
     </script>
     <script src="https://github.com/processing/p5.js/releases/download/0.6.0/p5.min.js"></script>
     <script src="scripts/background.min.js"></script>
+    <script src="scripts/dropdown.min.js"></script>
     <script src="scripts/contentLoader.min.js"></script>
     <script src="scripts/navIcons.min.js"></script>
 </body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="modal">
+        <div class="easter-egg">
+            <p>Congratulations! You reached 3000 points!</p>
+            <!-- https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&showinfo=0&controls=0&disablekb=1&iv_load_policy=3 -->
+            <iframe class="rickrolled" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+        </div>
+
+        <div class="lose-msg">
+            <h1>Out of hearts... Sorry! :(</h1>
+            <button class="try-again">TRY AGAIN</button>
+        </div>
+    </div>
+   
+    <div class="container">
+        <h1 class="title">The Frogger</h1>
+
+        <p class="header-msg"></p>
+
+        <section class="nav">
+            <ul>
+                <li class="nav-el"><button class="restart">restart</button></li>
+                <li class="nav-el"><a href="https://github.com/Todiros/arcade-game/blob/master/README.md" target="_blank" class="instructions">instructions</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>

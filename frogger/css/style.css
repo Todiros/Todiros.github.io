@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+body {
+    text-align: center;
+    background: url('../images/background.png') center/cover no-repeat fixed;
+}
+
+.easter-egg {
+    display: none;
+    margin-top: 110px;
+    text-shadow: 1px 1px blueviolet;
+}
+.rickrolled {
+    pointer-events: none;
+    margin-top: 110px;
+}
+
+.overlay, .modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    z-index: 1;
+    background-image: radial-gradient(circle, rgba(246, 244, 242, 0.4), rgba(37, 38, 39, 0.7));
+}
+
+.modal {
+    z-index: 5;
+    display: none;
+    background: radial-gradient(circle, rgba(96, 143, 145, 0.98), rgba(96, 143, 145, 0.4));
+    color: whitesmoke;
+    font: 500 35px 'Righteous', Courier, monospace;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    font-family:  'Righteous', Courier, monospace;
+}
+
+.title {
+    font: 500 35px 'Righteous', Courier, monospace;
+}
+
+.header-msg {
+    color: whitesmoke;
+    text-shadow: 1px 1px darkslategray;
+}
+
+.nav {
+    transform: translateY(635px);
+    margin-left: 260px;
+}
+.nav-el {
+    list-style: none;
+    display: inline;
+    margin: 0 5px;
+    text-transform: uppercase;
+    font: 300 15px;
+}
+
+.restart, .try-again {
+    font: inherit;
+    text-transform: inherit;
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.restart:focus {
+    outline: 0;
+}
+
+.instructions {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.lose-msg {
+    transform: translateY(160%);
+    text-shadow: 1px 1px blueviolet;
+}
+
+.try-again {   
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    text-shadow: 1px 1px whitesmoke;
+}
+
+
+
+
+
